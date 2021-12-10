@@ -1,0 +1,190 @@
+body{
+    background-color: ivory;
+    font-family: sans-serif, 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Barra navegacion */
+.barramenu {
+  background: #fa4848;
+  color: white;
+  padding: 0.3rem 0.3;
+  margin-top: 8rem;
+  position: fixed;
+  left: 0;
+}
+
+.barramenu a {
+  color: white;
+  text-decoration: none;
+}
+
+.containernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barramenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.barramenu ul li {
+  display: inline-block;
+}
+
+.barramenu ul li a {
+  display: block;
+  padding: 0.5rem 0.5rem;
+}
+
+.barramenu ul li a:hover {
+  background: #d83636;
+  
+}
+
+
+/* seccion inicio */
+.Inicio {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.contenedor-inicio {
+  width: 80%;
+}
+
+.imagen-inicio {
+  width: 80%;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin: 20px 0px;
+  font-family: 'Lobster';
+}
+
+/* seccion nosotros */
+.nosotros {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+.contenedor-nosotros {
+  width: 80%;
+  background: #1577d3;
+  color: ivory;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 0 0 0 10%;
+}
+
+
+/* seccion productos*/
+.productos {
+  text-align: center;
+}
+
+/* Galeria imagenes */
+.containergaleria{
+  margin: auto;
+  background-color: ivory;
+  width: 800px;
+  padding: 30px;
+}
+  
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+  
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+  
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+  
+ul.slider li:first-child {
+    opacity: 1;
+}
+  
+ul.slider li:target {
+    opacity: 1;
+}
+  
+/*seleccion galeria*/
+.move{
+  text-align: center;
+  margin: 20px;
+}
+  
+.move li{
+  display: inline-block;
+  text-align: center;
+}
+  
+.move li a{
+  display: inline-block;
+  color: ivory;
+  text-decoration: none;
+  background-color: #2048f8;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+/* seccion contacto */
+.contacto {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+.contenedor-contacto {
+  width: 50%;
+}
+
+.formulario {
+  width: 90%;
+  color: ivory;
+  text-align: center;
+  background: #1577d3;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 0 0 0 10%;
+}
